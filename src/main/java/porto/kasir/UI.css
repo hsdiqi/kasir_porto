@@ -1,0 +1,4 @@
+#header{
+    -fx-background-color: linear-gradient(to bottom, #72d983, rgba(196, 255, 243, 0.75));
+    -fx-text-fill: white; /* Optional: untuk mengatur warna teks agar kontras dengan latar belakang */
+}
