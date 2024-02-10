@@ -1,4 +1,59 @@
-#header{
+/* Gaya responsif untuk Header */
+#header {
+    -fx-padding: 5px;
     -fx-background-color: linear-gradient(to bottom, #72d983, rgba(196, 255, 243, 0.75));
-    -fx-text-fill: white; /* Optional: untuk mengatur warna teks agar kontras dengan latar belakang */
+}
+
+#tfSearch {
+    -fx-pref-width: 60%;
+}
+
+/* Gaya responsif untuk ScrollPane */
+#spList, #spBuy {
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+/* Gaya responsif untuk VBox */
+#vbListItems, #vbBuy {
+    -fx-pref-width: 100%;
+    -fx-spacing: 10px;
+}
+
+/* Gaya responsif untuk GridPane */
+#gpTotal {
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+    -fx-hgap: 10px;
+    -fx-vgap: 5px;
+}
+
+/* Gaya responsif untuk Button */
+#gpTotal Button {
+    -fx-pref-width: 100%;
+}
+
+/* Gaya responsif untuk Text, Label, dan TextField di dalam GridPane */
+#gpTotal Text, #gpTotal Label, #gpTotal TextField {
+    -fx-alignment: center-left;
+}
+
+/* Gaya responsif untuk TextField di dalam GridPane */
+#gpTotal TextField {
+    -fx-pref-width: 60%;
+}
+
+/* Gaya responsif untuk elemen lainnya */
+#txtBack1, #txtBack2 {
+    -fx-fill: #0000ff;
+}
+
+/* Gaya responsif tambahan menggunakan media query */
+@media only screen and (max-width: 600px) {
+    /* Gaya responsif untuk jendela dengan lebar maksimum 600px */
+    #tfSearch {
+        -fx-pref-width: 100%; /* Gunakan lebar penuh pada TextField */
+    }
+
+    /* Tambahan gaya responsif lainnya bisa ditambahkan di sini */
 }
